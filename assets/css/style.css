@@ -1,0 +1,93 @@
+/***********************************************
+++ Global Wings Website Template
+++ Version: 1
+++ Support: ahmobin.cse@gmail.com
+***********************************************/
+
+
+/***************************************
+// CSS Indexing
+======================================
+1. Variables Define
+2. Custom Buttons
+3. Header Section
+4. Footer Section
+****************************************/
+
+
+/***************************************
+Custom Buttons
+****************************************/
+
+
+
+/***************************************
+Header
+****************************************/
+
+.header{
+    background: url(../images/home-bg.png);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.header .header_intro{
+    float: left;
+    width: 60%;
+    padding-left: 5%;
+}
+
+.header .header_intro .brand{
+    margin: 5% auto;
+}
+
+.header .header_intro .content{
+    margin-left: 5%;
+}
+
+.header .header_intro .content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.header .header_intro .content h1 span{
+    color: #E01E38;
+}
+
+.header .header_intro .content p{
+    margin-top: 40px;
+}
+
+.header .header_intro .social_links{
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+.header .header_intro .social_links a{
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    margin-right: 3%;
+    text-decoration: none;
+}
+
+.header .header_intro .social_links a:hover{
+    color: #E01E38;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.header .scroll_down{
+    position: absolute;
+    left: 2%;
+    bottom:5%;
+    transform: translate(-2%, -5%);
+    color: #E01E38;
+    font-weight: 600;
+}
