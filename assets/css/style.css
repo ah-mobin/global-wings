@@ -16,9 +16,19 @@
 
 
 /***************************************
-Custom Buttons
+1. Variables Define
 ****************************************/
+:root{
+    --brand-color: #E01E38;
+}
 
+/***************************************
+Customs
+****************************************/
+.container{
+    width: 75%;
+    margin: auto
+}
 
 
 /***************************************
@@ -57,7 +67,7 @@ Header
 }
 
 .header .header_intro .content h1 span{
-    color: #E01E38;
+    color: var(--brand-color);
 }
 
 .header .header_intro .content p{
@@ -78,16 +88,226 @@ Header
 }
 
 .header .header_intro .social_links a:hover{
-    color: #E01E38;
+    color: var(--brand-color);
     transition: all 0.3s ease-in-out;
 }
 
 
-.header .scroll_down{
+.header .vertical_menu{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-left: 2px solid black;
+}
+.header .vertical_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.header .vertical_menu ul li{
+    -moz-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    float:bottom;
+    margin-bottom: 50px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+.header .vertical_menu ul li a{
+    color: #222;
+    font-weight: 600;
+}
+
+
+.header .scroll_down a{
     position: absolute;
     left: 2%;
     bottom:5%;
     transform: translate(-2%, -5%);
-    color: #E01E38;
+    color: var(--brand-color);
+}
+
+.header .scroll_down a .text{
+    -webkit-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+    text-transform: uppercase;
+    line-height: 1rem;
     font-weight: 600;
+}
+
+.header .scroll_down a i{
+    margin-left: 35%;
+    margin-top: 20%;
+    font-size: 1.8rem;
+}
+
+
+.left__heading{
+    margin: 60px auto;
+}
+
+.left__heading .heading{
+    background: url(../images/dotted_vr.png);
+    width: 60%;
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left__heading .heading h1{
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-top: 10%;
+    padding-left: 15%;
+    text-transform: uppercase;
+}
+
+.left__heading .content p{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    padding-top: 10%;
+    letter-spacing: 0.05rem;
+}
+
+.left__heading .content span{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+.left__heading .content span a{
+    color: #333;
+    text-decoration: none;
+}
+
+.left__heading .content span a:hover{
+    color: var(--brand-color);
+    transition: 0.3s ease-in-out all;
+}
+
+.left__heading .content span img{
+    height: 25px;
+}
+
+.left__heading .content{
+    overflow: hidden;
+}
+
+.colored__left__bg{
+    margin-top: 120px;
+}
+
+.colored__left__bg .red__bg{
+    position: relative;
+    background-image: url(../images/red_bg.png);
+    width: 50%;
+    height: 55vh;
+    padding-left: 15%;
+}
+
+.colored__left__bg .dark__bg{
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    background-image: url(../images/dark_bg.png);
+    width: 50%;
+    height: 50vh;
+}
+
+.colored__left__bg .bg__image{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    background-image: url(../images/faculty.png);
+    width: 70%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.colored__left__bg .bg__image .overlay{
+    width: 64%;
+    height: 40vh;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    /* top: 15%;
+    left: 49%; */
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-15%);
+    background-size: contain;
+}
+
+.colored__left__bg .bg__image .overlay h1{
+    transform: rotate(270deg);
+    color: #e5e5e5;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: -150px;
+}
+
+.colored__left__bg .heading{
+    background: url(../images/dotted_hr.png);
+    width: 60%;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.colored__left__bg .heading h1{
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-top: 10%;
+    padding-left: 15%;
+    text-transform: uppercase;
+}
+
+
+.colored__left__bg .content p{
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    padding-top: 10%;
+    letter-spacing: 0.05rem;
+}
+
+.colored__left__bg .content span{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+}
+
+.colored__left__bg .content span a{
+    color: #333;
+    text-decoration: none;
+}
+
+.colored__left__bg .content span a:hover{
+    color: var(--brand-color);
+    transition: 0.3s ease-in-out all;
+}
+
+.colored__left__bg .content span img{
+    height: 25px;
+}
+
+.colored__left__bg .content{
+    overflow: hidden;
 }
